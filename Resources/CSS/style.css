@@ -1,0 +1,379 @@
+html{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+body{
+    margin: 0;
+}
+header{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 64px;
+    background-color: rgb(39, 47, 94);
+}
+
+.navbar{
+    width: 100%;
+}
+.navbar .desktop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .mobile{
+    display: none;
+}
+
+header .desktop .name{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+    margin: 16px 24px;
+
+    img{
+        filter: invert(65%) sepia(56%) saturate(659%) hue-rotate(2deg) brightness(96%) contrast(82%);
+    }
+
+    .name-a{
+        color: rgb(236, 221, 181);
+    }
+}
+
+
+.colmar{
+    color: #daa520;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+    margin: 16px 24px;
+    font-size: 1.5rem;
+}
+
+.navigation a{
+    margin: 16px;
+    color: goldenrod;
+}
+banner{
+    top: 64px;
+    display: inline-flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgb(39, 47, 94);
+    text-align: center;
+    border-top: 2px solid goldenrod ;
+
+
+}
+banner img{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.banner-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 32px 24px;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(236, 221, 181);
+
+}
+
+button{
+    font-size: 3rem;
+    font-weight: 700;
+    padding:8px;
+    border: solid 2px rgb(39, 47, 94);
+    border-radius: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(236, 221, 181);
+
+}
+
+button:hover{
+    background-color: rgb(90, 76, 58) ;
+    border: 2px solid black;
+    color: rgb(236, 221, 181);
+}
+
+.highlights{
+    width: 80%;
+    background-color: rgba(209, 150, 40, 0.699);
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.main-info{
+    width: 60%;
+
+}
+
+.main-info img{
+    max-width: 100%;
+    margin: 32px 24px;
+}
+
+.main-info-text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+}
+
+.main-info-text h2{
+    font-size: 2rem;
+    margin-bottom: 24px;
+
+}
+
+.small-info{
+    width: 40%;
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: solid 1px grey;
+}
+
+.small-info a{
+    color: rgb(39, 47, 94);
+}
+.orientation{
+    display: flex;
+    border: solid 1px grey;
+}
+
+.orientation picture{
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+
+.orientation picture img{
+    max-width: 100%;
+}
+
+.orientation-info{
+    width: 65%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.campus{
+    display: flex;
+    border: solid 1px grey;
+}    
+
+.campus picture{
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+
+.campus picture img{
+    max-width: 100%;
+}
+
+.campus-info{
+    width: 65%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.guest{
+    display: flex;
+    border: solid 1px grey;
+}
+
+.guest picture{
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+
+.guest picture img{
+    max-width: 100%;
+}
+.guest-info{
+    width: 65%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.learn{
+    background-color: rgb(39, 47, 94);
+    width: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.learn h1{
+    font-size: 2rem;
+    margin-top: 32px;
+    color: rgb(236, 221, 181);
+}
+
+.programs{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 72px;
+    justify-content: space-between;
+}
+
+.programs div{
+    width: 30%;
+    margin-bottom: 32px;
+    background-color: rgb(236, 221, 181);
+    border: rgb(39, 47, 94) 1px solid;
+    border-radius: 20px;
+    
+}
+
+.programs div:hover{
+    background-color: rgb(90, 76, 58) ;
+    color: rgb(236, 221, 181);
+    border: 1px solid black;
+}
+
+.programs img{
+    max-width: 100%;
+    border-radius: 18px;
+}
+
+.exhibit{
+    width: 80%;
+    background-color: pink;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 32px;
+}
+
+.thesis{
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.urban{
+    width: 60%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 32px;
+    font-size: 1.5rem;
+    margin-right: 32px;
+    
+    h2{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    
+    }
+}
+
+.urban video{
+    max-width: 100%;
+    padding: 32px 24px 24px 24px;
+
+}
+
+.other-thesis{
+    width: 40%;
+    padding-left: 32px;
+    padding-top: 32px;
+
+}
+
+.other-thesis img{
+    max-width: 100%;
+}
+.fisma{
+    display: inline-flex;
+}
+
+.fisma picture{
+    width: 35%;
+    height: auto;
+}
+
+
+.fisma-text{
+    width: 65%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.now-and-then{
+    display: inline-flex;
+    width: 100%;
+}
+
+.now-and-then picture{
+    width: 35%;
+    height: auto;
+}
+
+.now-and-then-text{
+    width: 65%;
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    background-color: rgb(39, 47, 94);
+    justify-content: space-between;
+}
+
+footer p{
+    font-size: 18px;
+    padding-left: 24px;
+    color: goldenrod;
+}
+.terms-and-privacy{
+    padding: 16px 0;
+}
+
+footer a{
+    padding: 6px;
+    font-size: 18px;
+    color: goldenrod;
+}
