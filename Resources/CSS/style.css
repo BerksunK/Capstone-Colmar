@@ -69,7 +69,7 @@ header .desktop .name{
     color: goldenrod;
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
     .navbar .desktop{
         display: none;
     }
@@ -81,9 +81,10 @@ header .desktop .name{
         align-items: center;
         padding-top: 8px;
 
-        a{
-            filter: invert(65%) sepia(56%) saturate(659%) hue-rotate(2deg) brightness(96%) contrast(82%)
-        }
+    }
+
+    .navbar .mobile a{
+        filter: invert(65%) sepia(56%) saturate(659%) hue-rotate(2deg) brightness(96%) contrast(82%);
     }
 
     .navbar .mobile img{
@@ -138,7 +139,7 @@ button:hover{
     color: rgb(236, 221, 181);
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
     
     banner{
         display: inline-flex;
@@ -288,7 +289,7 @@ button:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
 
     .highlights{
         height: auto;
@@ -401,21 +402,27 @@ button:hover{
     border-radius: 18px 18px 0 0;
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
 
-.programs{
-    img, h5, p{
+    .programs img{
+    display: none;
+    }
+
+    .programs h5{
         display: none;
     }
 
-    div{
+    .programs p{
+        display: none;
+    }
+
+    .programs div{
         width: 100%;
         font-size: 32px;
         margin: 8px auto;
     }
 }
 
-}
 
 .exhibit{
     width: 80%;
@@ -502,7 +509,7 @@ button:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
     .thesis{
         font-size: 32px;
         padding:0;
@@ -514,12 +521,17 @@ button:hover{
         margin: 0 auto 16px;
     }
     .urban{
-        h4, p{
-            display: none;
-        }
         width: 100%;
-
     }
+
+    .urban h4{
+        display: none;
+    }
+
+    .urban p{
+        display: none;
+    }
+
     .other-thesis{
         display: none;
     }
@@ -555,7 +567,7 @@ footer a{
     color: goldenrod;
 }
 
-@media only screen and (max-width:770px){
+@media only screen and (max-width:800px){
     footer{
         height: 72px;
     }
