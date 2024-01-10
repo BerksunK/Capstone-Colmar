@@ -11,14 +11,16 @@ a{
 }
 
 body{
-    margin: 0;
+    margin: 0 auto;
 }
+
+
 header{
     display: inline-flex;
-    position: relative;
-    width: 80%;
+    position: relative;;
     height: 64px;
     background-color: rgb(39, 47, 94);
+    width: 80%;
 }
 
 .navbar{
@@ -66,20 +68,45 @@ header .desktop .name{
     margin: 16px;
     color: goldenrod;
 }
+
+@media only screen and (max-width:770px){
+    .navbar .desktop{
+        display: none;
+    }
+
+    .navbar .mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 8px;
+
+        a{
+            filter: invert(65%) sepia(56%) saturate(659%) hue-rotate(2deg) brightness(96%) contrast(82%)
+        }
+    }
+
+    .navbar .mobile img{
+        width: 40px;
+    }
+}
+
+
+
 banner{
-    top: 64px;
     display: inline-flex;
     flex-direction: row;
-    width: 80%;
     background-color: rgb(39, 47, 94);
     text-align: center;
     border-top: 2px solid goldenrod ;
+    width: 80%;
+
 
 
 }
 banner img{
     width: 60%;
-    margin: 32px 24px;
+    margin: 32px 20px;
 }
 
 .banner-text{
@@ -87,14 +114,15 @@ banner img{
     justify-content: center;
     flex-direction: column;
     margin: 32px 24px;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(236, 221, 181);
+    width: 40%;
 
 }
 
 button{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     padding:8px;
     border: solid 2px rgb(39, 47, 94);
@@ -108,6 +136,39 @@ button:hover{
     background-color: rgb(90, 76, 58) ;
     border: 2px solid black;
     color: rgb(236, 221, 181);
+}
+
+@media only screen and (max-width:770px){
+    
+    banner{
+        width: %100;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    banner img{
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .banner-text{
+        width: 100%;
+
+    }
+
+    .banner-text h1{
+        margin: 32px 16px;
+    }
+    
+    .banner-text h3{
+        margin: auto 16px 24px 16px;
+
+    }
+
+    button{
+        margin: 24px 24px 32px 24px;
+    }
 }
 
 .highlights{
@@ -228,6 +289,77 @@ button:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+@media only screen and (max-width:770px){
+
+    .highlights{
+        height: auto;
+    }
+    
+    .main-info{
+        display: none;
+        margin: 0;
+    }
+
+    .small-info{
+        width: 100%;
+        border-left: none;
+        margin: 16px;
+        text-align: left;
+    }
+
+    .small-info picture{
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .small-info a{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .small-info h3{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .small-info p{
+        font-size: 20px;
+    }
+    .orientation{
+        display: inline-flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .orientation-info{
+        width: 100%;
+    }
+    .campus{
+        display: inline-flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .campus-info{
+        width: 100%;
+    }
+
+    .guest{
+        display: inline-flex;
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+
+    .guest-info{
+        width: 100%;
+    }
+
+}
 .learn{
     background-color: rgb(39, 47, 94);
     width: 80%;
@@ -262,11 +394,28 @@ button:hover{
     background-color: rgb(90, 76, 58) ;
     color: rgb(236, 221, 181);
     border: 1px solid black;
+    transform: scale(1.075);
 }
 
 .programs img{
     max-width: 100%;
-    border-radius: 18px;
+    border-radius: 18px 18px 0 0;
+}
+
+@media only screen and (max-width:770px){
+
+.programs{
+    img, h5, p{
+        display: none;
+    }
+
+    div{
+        width: 100%;
+        font-size: 32px;
+        margin: 8px auto;
+    }
+}
+
 }
 
 .exhibit{
@@ -275,6 +424,7 @@ button:hover{
     display: inline-flex;
     flex-direction: column;
     padding-top: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .thesis{
@@ -353,11 +503,39 @@ button:hover{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+@media only screen and (max-width:770px){
+    .thesis{
+        font-size: 32px;
+        padding:0;
+        margin: 0;
+        display: block;
+    }
+
+    h1{
+        margin: 0 auto 16px;
+    }
+    .urban{
+        h4, p{
+            display: none;
+        }
+        width: 100%;
+
+    }
+    .other-thesis{
+        display: none;
+    }
+    .urban video{
+        width: 100%;
+        padding: 0;
+        margin: 16px 0 24px 0;
+        height: auto;
+    }
+}
 footer{
-    display: flex;
+    display: inline-flex;
     position: relative;
     bottom: 0;
-    width: 100%;
+    width: 80%;
     height: 64px;
     background-color: rgb(39, 47, 94);
     justify-content: space-between;
@@ -376,4 +554,18 @@ footer a{
     padding: 6px;
     font-size: 18px;
     color: goldenrod;
+}
+
+@media only screen and (max-width:770px){
+    footer{
+        height: 72px;
+    }
+
+    footer p{
+        font-size: 20px;
+    }
+
+    footer a{
+        font-size: 20px;
+    }
 }
