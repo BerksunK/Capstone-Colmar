@@ -404,6 +404,14 @@ button:hover{
 
 @media only screen and (max-width:800px){
 
+    .learn{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .programs{
+        margin: 32px;
+    }
     .programs img{
     display: none;
     }
@@ -418,8 +426,9 @@ button:hover{
 
     .programs div{
         width: 100%;
-        font-size: 32px;
+        font-size: 28px;
         margin: 8px auto;
+
     }
 }
 
